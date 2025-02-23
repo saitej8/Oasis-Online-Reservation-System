@@ -5,8 +5,12 @@ create database online_reservation_system;
 use online_reservation_system;
 
 -- create users table--
-create table users (userid int primary key auto_increment,username varchar(50),password varchar(50),role varchar(20));
+create table users(userid int primary key auto_increment,username varchar(50),password varchar(50),role varchar(20));
 
 -- create reservations table--
-create table reservations (reservationid int primary key auto_increment,pnrynumber varchar(20),passengername varchar(100),trainno varchar(10), trainname varchar(50),classtype varchar(20), date date,fromplace varchar(50),toplace varchar(50));
+
+create table reservations(reservationId int primary key auto_increment,pnrNumber varchar(20),passengerName varchar(100),trainNo varchar(10),trainName varchar(50),classType varchar(20),date date,fromPlace varchar(50),toPlace varchar(50));
+
+
+
 
